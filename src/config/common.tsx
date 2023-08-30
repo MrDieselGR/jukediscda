@@ -3,7 +3,7 @@ import { PermissionFlags } from 'api/discord';
 import { AppConfig } from './types';
 
 const OmagizeIcon = createIcon({
-  displayName: 'OmagizeLogo',
+  displayName: 'JukeDisc',
   viewBox: '0 0 512 512',
   path: (
     <g>
@@ -20,10 +20,10 @@ const OmagizeIcon = createIcon({
 });
 
 export const config: AppConfig = {
-  name: 'BadDog',
+  name: 'JukeDisc',
   icon: OmagizeIcon,
   inviteUrl:
-    'https://discord.com/api/oauth2/authorize?client_id=1056177022562476072&permissions=8&scope=bot',
+    'https://discord.com/api/oauth2/authorize?client_id=1109751797549105176&permissions=8&scope=bot',
   guild: {
     //filter guilds that user has no permissions to manage it
     filter: (guild) => (Number(guild.permissions) & PermissionFlags.ADMINISTRATOR) !== 0,
